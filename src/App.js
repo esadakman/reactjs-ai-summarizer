@@ -1,12 +1,13 @@
 import { lazy, Suspense } from "react";
 import {
   BrowserRouter,
-  Navigate,
-  Outlet,
+  // Navigate,
+  // Outlet,
   Route,
   Routes,
 } from "react-router-dom";
 import * as ROUTES from "./constants/routes";
+import "./styles/app.css";
 const Login = lazy(() => import("./pages/login"));
 
 function App() {
