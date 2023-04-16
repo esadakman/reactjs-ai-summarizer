@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import * as ROUTES from "./constants/routes";
 import "./styles/app.css";
+import SignUp from "./pages/signup";
 const Login = lazy(() => import("./pages/login"));
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path={ROUTES.LOGIN} element={<Login />} />
+          <Route path={ROUTES.SIGN_UP} element={<SignUp />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
