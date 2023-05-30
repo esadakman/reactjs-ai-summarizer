@@ -9,6 +9,7 @@ import {
 import * as ROUTES from "./constants/routes";
 import "./styles/app.css";
 import SignUp from "./pages/signup";
+import NotFound from "./pages/not-found";
 const Login = lazy(() => import("./pages/login"));
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path={ROUTES.LOGIN} element={<Login />} />
           <Route path={ROUTES.SIGN_UP} element={<SignUp />} />
+          <Route path="/*" element={<NotFound  />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
