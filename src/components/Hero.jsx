@@ -29,6 +29,9 @@ const Hero = () => {
         Simplify your reading with Summize, an open-source article summarizer
         that transforms lengthy articles into clear and concise summaries
       </h2>
+      <p className="text-sm text-center text-slate-600 mt-2" >
+        (Process can take up to 30 seconds depending on the length of the article. Please be patient.)
+      </p>
     </header>
   );
 };
