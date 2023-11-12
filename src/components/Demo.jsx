@@ -84,7 +84,8 @@ const Demo = () => {
           />
           <button
             type="submit"
-            className="submit_btn peer-focus:border-gray-700 peer-focus:text-gray-700 "
+			title="Submit"
+            className="submit_btn peer-focus:border-gray-700 peer-focus:text-gray-700 transition"
           >
             <p>↵</p>
           </button>
@@ -98,7 +99,7 @@ const Demo = () => {
               onClick={() => setArticle(item)}
               className="link_card"
             >
-              <div className="copy_btn" onClick={() => handleCopy(item.url)}>
+              <div className="copy_btn transition" title="Copy Link" onClick={() => handleCopy(item.url)}>
                 <img
                   src={copied === item.url ? tick : copy}
                   alt={copied === item.url ? "tick_icon" : "copy_icon"}
@@ -131,7 +132,7 @@ const Demo = () => {
               <h2 className="font-satoshi font-bold text-gray-600 text-xl">
                 Article <span className="blue_gradient">Summary</span>
               </h2>
-              <div className="summary_box">
+              <div className="summary_box max-h-80 overflow-auto">
                 <p className="font-inter font-medium text-sm text-gray-700">
                   {article.summary}
                 </p>

@@ -14,7 +14,8 @@ const Hero = () => {
               "_blank"
             )
           }
-          className="black_btn"
+          title="Repository Link"
+          className="black_btn transition"
         >
           GitHub
         </button>
