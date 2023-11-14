@@ -13,7 +13,7 @@
 
 ## Project Link
 
-<!-- #### You can reach my project from [here](https://reactjs-ai-summarizer.vercel.app/) 👈 -->
+#### You can reach my project from [here](https://reactjs-ai-summarizer.vercel.app/) 👈
 
 ## Project Skeleton
 
@@ -84,5 +84,5 @@ $ npm run dev / yarn dev
 
 ### Preview of the Project
  
-<!-- <img src="./.gif" alt="gif"   /> -->
+<img src="./aiSummarizer.gif" alt="gif"   />
  
